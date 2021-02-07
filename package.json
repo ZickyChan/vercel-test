@@ -5,11 +5,24 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "prettier": "prettier -l '{pages,test,docs}/**/*.{js,yml,yaml,json,md}'",
+    "prettier:write": "prettier --write '{pages,test,docs}/**/*.{js,yml,yaml,json,md}'",
+    "start": "next start",
+    "test": "jest"
   },
   "dependencies": {
     "next": "10.0.5",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "swr": "^0.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^26.6.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^26.6.3",
+    "node-mocks-http": "^1.10.1",
+    "prettier": "^2.2.1"
   }
 }
